@@ -1,4 +1,7 @@
 #awk用法2018-3-13，lst
+#2019-3-15更新
+#打印某个字符出现的行号
+awk -F ';' '{for (f=1; f <= NF; f+=1) {if ($f ~ /Asinex/) {print NR,$f}}}' text.dat > asinex.dat
 #更新时间 2018-11-30
 #双引号与单引号有区别
 # awk把前几行合并为一行
